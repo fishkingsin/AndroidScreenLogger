@@ -6,7 +6,7 @@ plugins {
 android {
     namespace = "dev.tools.screenlogger"
     compileSdk = 34
-
+    version = "1.0"
     defaultConfig {
         minSdk = 28
 
