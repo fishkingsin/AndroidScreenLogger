@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/general_5dp"
+        android:text="All Logs"
+        android:textSize="23sp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:theme="@style/Theme.AppCompat"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tv_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tv_tracking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tracking" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tv_tealium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tealium" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mScreenLoggerRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnClearLogs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/general_tiny_margin_5dp"
+        android:background="@color/primary"
+        android:gravity="center"
+        android:padding="@dimen/general_tiny_margin_5dp"
+        android:text="Clear Logs"
+        android:textSize="16sp" />
+</LinearLayout>

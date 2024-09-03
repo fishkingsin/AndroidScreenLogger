@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dev.tools.screenlogger.ui.NonSwipableViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vpScreenLoggerViewPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/general_large_margin_20dp"
+    android:visibility="gone" />

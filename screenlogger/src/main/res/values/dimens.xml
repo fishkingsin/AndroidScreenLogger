@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="general_0dp">0dp</dimen>
+    <dimen name="general_1dp">1dp</dimen>
+    <dimen name="general_5dp">5dp</dimen>
+
+    <dimen name="general_2dp">2dp</dimen>
+    <dimen name="general_3dp">3dp</dimen>
+    <dimen name="general_4dp">4dp</dimen>
+    <dimen name="general_tiny_margin_5dp">5dp</dimen>
+    <dimen name="general_small_margin_10dp">10dp</dimen>
+    <dimen name="general_medium_margin_15dp">15dp</dimen>
+    <dimen name="general_medium_margin_25dp">25dp</dimen>
+    <dimen name="general_margin_35dp">35dp</dimen>
+    <dimen name="general_margin_45dp">45dp</dimen>
+
+    <dimen name="general_large_margin_20dp">20dp</dimen>
+    <dimen name="general_large_margin_30dp">30dp</dimen>
+    <dimen name="general_large_margin_35dp">35dp</dimen>
+    <dimen name="general_large_margin_40dp">40dp</dimen>
+    <dimen name="general_large_margin_45dp">45dp</dimen>
+    <dimen name="general_large_margin_50dp">50dp</dimen>
+    <dimen name="general_large_margin_55dp">55dp</dimen>
+    <dimen name="general_large_margin_60dp">60dp</dimen>
+    <dimen name="general_large_margin_65dp">65dp</dimen>
+    <dimen name="general_large_margin_70dp">70dp</dimen>
+    <dimen name="general_large_margin_75dp">75dp</dimen>
+    <dimen name="general_large_margin_80dp">80dp</dimen>
+    <dimen name="general_large_margin_85dp">85dp</dimen>
+    <dimen name="general_large_margin_90dp">90dp</dimen>
+    <dimen name="general_large_margin_100dp">100dp</dimen>
+    <dimen name="general_large_margin_110dp">110dp</dimen>
+    <dimen name="general_large_margin_120dp">120dp</dimen>
+    <dimen name="general_large_margin_125dp">125dp</dimen>
+
+    <dimen name="screen_log_toolbar_height">60dp</dimen>
+
+</resources>
