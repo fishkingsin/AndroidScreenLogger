@@ -77,16 +77,3 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(libs.material.v110)
 }
-
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("maven") {
-                from (components["release"])
-                groupId = "dev.tools"
-                artifactId = "screenlogger"
-                version = "1.0"
-            }
-        }
-    }
-}
