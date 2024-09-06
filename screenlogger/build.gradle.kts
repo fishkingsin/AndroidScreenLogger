@@ -7,9 +7,9 @@ plugins {
 android {
     namespace = "dev.tools.screenlogger"
     compileSdk = 34
-    version = "1.0.3"
+    version = "1.0.5"
     defaultConfig {
-        minSdk = 28
+        minSdk = 21
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")

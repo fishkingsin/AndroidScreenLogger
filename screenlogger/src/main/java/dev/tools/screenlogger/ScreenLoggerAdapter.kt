@@ -52,6 +52,9 @@ class ScreenLoggerAdapter(private val mContext: Context) :
     }
 
     override fun onBindViewHolder(holder: ScreenLoggerViewHolder, position: Int) {
+        if (mCurrentDisplayLogList.size < position) {
+            return
+        }
         val screenLog: ScreenLog = mCurrentDisplayLogList[position]
         holder.setScreenLog(screenLog)
         if (mOnScreenLogItemClickListener != null) {

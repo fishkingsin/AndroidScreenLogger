@@ -14,7 +14,7 @@ import dev.tools.screenlogger.ScreenLoggerReceiver.OnScreenLogReceiveListener
 import java.util.concurrent.atomic.AtomicInteger
 
 
-class ScreenLoggerStarter private constructor(application: Application) :
+public class ScreenLoggerStarter private constructor(application: Application) :
     ActivityLifecycleCallbacks {
     private var mScreenLoggerOverlay: ScreenLoggerOverlay? = null
     private val mActivityOnStartedStackCount = AtomicInteger(0)
