@@ -33,12 +33,6 @@ android {
     }
 }
 
-kotlin{
-    jvmToolchain{
-        languageVersion.set(JavaLanguageVersion.of(17))
-    }
-}
-
 dependencies {
 
     implementation(libs.androidx.core.ktx)
@@ -59,5 +53,20 @@ afterEvaluate {
                 version = "1.0"
             }
         }
+        repositories {
+            maven {
+                name = "screenlogger"
+                url = uri(layout.buildDirectory.dir("repo"))
+            }
+        }
     }
+}
+
+tasks.register<Zip>("generateRepo") {
+    val publishTask = tasks.named(
+        "publishMavenPublicationToScreenloggerRepository",
+        PublishToMavenRepository::class.java)
+    from(publishTask.map { it.repository.url })
+    into("screenlogger")
+    archiveFileName.set("screenlogger.zip")
 }
